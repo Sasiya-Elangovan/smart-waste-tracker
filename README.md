@@ -111,5 +111,11 @@ DELETE /api/pickups/:id
 ```
  Note: Replace :id with the actual pickup _id from MongoDB database.
 
+## 🖼️ Preview
+
+Here is a preview of the Smart Waste Pickup Tracker frontend:
+
+![Smart Waste Pickup Screenshot](./frontend/screenshot.png)
+
 
 
