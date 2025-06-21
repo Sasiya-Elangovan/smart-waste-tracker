@@ -1,0 +1,42 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Smart Waste Pickup</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <h1><i class="fas fa-recycle"></i> Schedule a Waste Pickup</h1>
+
+  <form id="pickupForm">
+    <input type="hidden" id="pickupId" />
+    <input type="text" id="houseNumber" placeholder="House Number" required />
+    <input type="date" id="date" required />
+    <select id="wasteType">
+      <option value="">Waste Type</option>
+      <option value="wet">Wet</option>
+      <option value="dry">Dry</option>
+    </select>
+    <input type="text" id="status" placeholder="Status" required />
+    <input type="text" id="feedback" placeholder="Feedback" />
+    <button type="submit">Submit</button>
+  </form>
+
+  <h2 style="text-align:center">All Pickups</h2>
+  <table>
+    <thead>
+      <tr>
+        <th>House</th>
+        <th>Date</th>
+        <th>Type</th>
+        <th>Status</th>
+        <th>Feedback</th>
+        <th>Actions</th>
+      </tr>
+    </thead>
+    <tbody id="pickupList"></tbody>
+  </table>
+
+  <script src="script.js"></script>
+</body>
+</html>
