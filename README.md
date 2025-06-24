@@ -117,5 +117,55 @@ Here is a preview of the Smart Waste Pickup Tracker frontend:
 
 ![Smart Waste Pickup Screenshot](./frontend/screenshot.png)
 
+---
+
+## ✅ Testing & Coverage
+
+All unit, integration, and API tests are written using **Jest** and **Supertest**.
+
+📦 Test Coverage: **100%**
+
+- Statements: 100%
+- Branches: 100%
+- Functions: 100%
+- Lines: 100%
+
+🧪 Run Tests:
+```bash
+npm test
+```
+---
+
+## ✅ Testing & Code Coverage
+
+
+### 🧪 Testing Strategy
+
+To achieve **>90% test coverage**, I wrote:
+
+- ✅ **Unit Tests**: For controller logic using **Jest** and mocking Mongoose with `jest.mock`.
+- ✅ **Integration Tests**: Verified database interaction using **mongodb-memory-server**.
+- ✅ **API Tests**: Tested all API endpoints with real HTTP requests using **Supertest**.
+---
+### 🧪 Test Structure
+
+tests/
+
+├── unit/ # Unit tests for controller logic
+│ └── pickupController.test.js
+
+├── api/ # API route tests using Supertest
+│ └── pickupRoutes.test.js
+
+└── Integration/ # DB integration tests
+└── db.test.js
+
+-----
+## Screenshot
+![Screenshot](./frontend/screenshot1.png)
+
+---
+
+
 
 
